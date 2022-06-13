@@ -1,0 +1,14 @@
+version: "3"
+
+
+services:
+  hpasmcli-exporter:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    container_name: hp_exporter
+    hostname: hp_exporter
+
+    volumes:
+      - "/usr/sbin/hpasmcli:/hpasmcli:ro"
+      - "./src:/var/www/html:z"
