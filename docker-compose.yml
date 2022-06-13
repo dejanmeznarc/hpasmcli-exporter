@@ -10,7 +10,7 @@ services:
     hostname: hp_exporter
 
     volumes:
-      - "/usr/sbin/hpasmcli:/hpasmcli:ro"
+      - /:/rootfs:ro
       - "./src:/var/www/html:z"
 
 networks:
