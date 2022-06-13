@@ -1,0 +1,40 @@
+# HELP hpe_temp Current temperature
+# TYPE hpe_temp gauge
+hpe_temp{location=ambient} 25
+hpe_temp{location=cpu0} 25
+hpe_temp{location=cpu1} 25
+hpe_temp{location=memory0} 25
+hpe_temp{location=memory1} 25
+
+
+# HELP hpe_fans Fan speed in percent
+# TYPE hpe_fans gauge
+hpe_fans{location=fan1} 13
+hpe_fans{location=fan2} 13
+hpe_fans{location=fan3} 13
+hpe_fans{location=fan4} 13
+hpe_fans{location=fan5} 13
+
+
+# HELP hpe_power_meter Power meter in watts
+# TYPE hpe_power_meter gauge
+hpe_power_meter{reader=1} 72
+
+
+
+# HELP hpe_power_supply Power supply status
+# TYPE hpe_power_supply gauge
+hpe_power_supply_active{number=1} 1
+hpe_power_supply_active{number=2} 0
+hpe_power_supply_condition{number=2} "ok"
+hpe_power_supply_condition{number=2} "ok"
+hpe_power_supply_power{number=2} 50
+hpe_power_supply_power{number=2} 75
+
+
+
+
+
+
+
+
