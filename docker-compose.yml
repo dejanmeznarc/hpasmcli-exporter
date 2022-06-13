@@ -9,6 +9,9 @@ services:
     container_name: hp_exporter
     hostname: hp_exporter
 
+    ports:
+      - 7788:80
+
     volumes:
       - "/usr/sbin/hpasmcli:/hpasmcli:ro"
       - "./src:/var/www/html:z"
