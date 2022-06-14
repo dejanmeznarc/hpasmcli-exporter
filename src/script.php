@@ -1,6 +1,9 @@
 <?php
 
-echo "hello world";
+echo "hello dworld";
+
+exec("eee")
+
 
 
 
