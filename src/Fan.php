@@ -1,6 +1,8 @@
 <?php
 
-class Fan
+require_once "MetricInterface.php";
+
+class Fan implements MetricInterface
 {
     /**
      * @var int
@@ -36,6 +38,16 @@ class Fan
      */
     private $hotplug;
 
+
+    public function printPrometheus()
+    {
+        echo "hpe_fan_present{number=$this->number,location=$this->location} " . (int)($this->present) . "<br>";
+        echo "hpe_fan_redundant{number=$this->number,location=$this->location} " . (int)($this->redundant) . "<br>";
+        echo "hpe_fan_hotplug{number=$this->number,location=$this->location} " . (int)($this->hotplug) . "<br>";
+        echo "hpe_fan_speed{number=$this->number,location=$this->location} $this->speed" . "<br>";
+        echo "hpe_fan_speed_percent{number=$this->number,location=$this->location} $this->speed_percent" . "<br>";
+        echo "hpe_fan_partner{number=$this->number,location=$this->location} $this->partner" . "<br>";
+    }
 
     public static function parse(array $tableArray): array
     {

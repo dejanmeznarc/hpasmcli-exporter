@@ -1,5 +1,4 @@
 <?php
-
 require_once "HpCommandParser.php";
 
 $hpOutputFile = getcwd() . "/hp_output.example";
@@ -14,5 +13,6 @@ $praser = new HpCommandParser($content);
 
 $praser->parseAll();
 
-print_r($praser->measurements);
-
+foreach ($praser->measurements as $measurement) {
+    $measurement->printPrometheus();
+}

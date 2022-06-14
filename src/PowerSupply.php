@@ -1,6 +1,7 @@
 <?php
+require_once "MetricInterface.php";
 
-class PowerSupply
+class PowerSupply implements MetricInterface
 {
 
     public int $number;
@@ -9,6 +10,16 @@ class PowerSupply
     public ?string $condition;
     public ?bool $hotplug;
     public ?float $power;
+
+
+    public function printPrometheus()
+    {
+        echo "hpe_psu_present{number=$this->number} " . (int)($this->present) . "<br>";
+        echo "hpe_psu_redundant{number=$this->number} " . (int)($this->redundant??-1) . "<br>";
+        echo "hpe_psu_condition{number=$this->number} " . ($this->condition??"unknown") . "<br>";
+        echo "hpe_psu_hotplug{number=$this->number} " . (int)($this->hotplug??-1) . "<br>";
+        echo "hpe_psu_power{number=$this->number} " . ($this->power ?? -1.0) . "<br>";
+    }
 
 
     public static function parse(string $fulltext)

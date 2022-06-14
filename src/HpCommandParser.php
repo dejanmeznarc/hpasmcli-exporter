@@ -88,11 +88,12 @@ class HpCommandParser
         }
 
 
-        $this->measurements[] = Fan::parse($this->razmesariTableo($rawTables["fans"]));
-        $this->measurements[] = TempSensor::parse($this->razmesariTableo($rawTables["temps"]));
-
-        $this->measurements[] = PowerMeter::parse($nonTables["powermeter"]);
-        $this->measurements[] = PowerSupply::parse($nonTables["psu"]);
+        $this->measurements = array_merge(
+            Fan::parse($this->razmesariTableo($rawTables["fans"])),
+            TempSensor::parse($this->razmesariTableo($rawTables["temps"])),
+            PowerMeter::parse($nonTables["powermeter"]),
+            PowerSupply::parse($nonTables["psu"]),
+        );
 
     }
 

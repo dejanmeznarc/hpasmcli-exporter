@@ -1,11 +1,16 @@
 <?php
+require_once "MetricInterface.php";
 
-class PowerMeter
+class PowerMeter implements MetricInterface
 {
 
     public int $number;
     public float $power;
 
+    public function printPrometheus()
+    {
+        echo "hpe_power_meter{number=$this->number} $this->power" . "<br>";
+    }
 
     public static function parse(string $fulltext)
     {
