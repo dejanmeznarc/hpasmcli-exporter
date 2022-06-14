@@ -1,1 +1,1 @@
-RedirectMatch permanent ^/(?<!index\.php)(.*) http://example.com/index.php
+RedirectMatch permanent ^/(?<!index\.php)(.*) /index.php
