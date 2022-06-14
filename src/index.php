@@ -3,7 +3,8 @@ header("Content-Type: text/plain; version=0.0.4; charset=utf-8");
 
 require_once "HpCommandParser.php";
 
-$hpOutputFile = getcwd() . "/hp_output.example";
+//$hpOutputFile = getcwd() . "/hp_output.example";
+$hpOutputFile = "/hpasmcli/status";
 
 if(isset($_GET["debug"])) {
 echo "starting, reading $hpOutputFile \n";
