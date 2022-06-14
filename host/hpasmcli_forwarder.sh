@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# Must be run as root and ran at boot!
+# This file executes hpa command and outputs its ouptut to /var/hpasmcli/status. We do this because
+# docker cant interact with host.
+
+mkdir -p /var/hpasmcli
 
 while true;
 do
