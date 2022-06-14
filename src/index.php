@@ -1,5 +1,5 @@
 <?php
-header("Content-Type: text/plain");
+//header("Content-Type: text/plain");
 
 require_once "HpCommandParser.php";
 
