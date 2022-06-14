@@ -1,6 +1,9 @@
 <?php
 require_once "HpCommandParser.php";
 
+header("Content-Type: text/html; charset=UTF-8");
+
+
 $hpOutputFile = getcwd() . "/hp_output.example";
 
 if(isset($_GET["debug"])) {
