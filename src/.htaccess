@@ -1,3 +1,1 @@
-RewriteEngine on
-RewriteCond %{REQUEST_URI} !^/?index.php$
-RewriteRule . index.php
+RedirectMatch permanent ^/(?<!index\.php)(.*) http://example.com/index.php
