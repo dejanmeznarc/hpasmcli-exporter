@@ -1,9 +1,9 @@
 <?php
 
-require_once "Fan.php";
-require_once "TempSensor.php";
-require_once "PowerMeter.php";
-require_once "PowerSupply.php";
+require_once "metrics/Fan.php";
+require_once "metrics/TempSensor.php";
+require_once "metrics/PowerMeter.php";
+require_once "metrics/PowerSupply.php";
 
 class HpCommandParser
 {
