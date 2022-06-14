@@ -1,0 +1,9 @@
+[Unit]
+Description=Export hpasmcli to file (for docker to use)
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/sbin/hpasmcli_forwarder
+
+[Install]
+WantedBy=multi-user.target
