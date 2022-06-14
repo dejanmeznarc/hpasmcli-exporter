@@ -25,4 +25,4 @@
 # HELP hpe_psu_hotplug Return 1 if PSU is hotpluggable
 # TYPE hpe_psu_hotplug gauge
 # HELP hpe_psu_power Return PSU power in watts
-# TYPE hpe_psu_power gauge\n
+# TYPE hpe_psu_power gauge

@@ -24,6 +24,8 @@ if(isset($_GET["debug"])){
 
 include "promhelp.php";
 
+echo "\n";
+
 foreach ($praser->measurements as $measurement) {
     $measurement->printPrometheus();
 }
