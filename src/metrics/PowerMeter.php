@@ -9,7 +9,7 @@ class PowerMeter implements MetricInterface
 
     public function printPrometheus()
     {
-        echo "hpe_power_meter{number=$this->number} $this->power" . "<br>";
+        echo "hpe_power_meter{number=$this->number} $this->power" . "\n";
     }
 
     public static function parse(string $fulltext)

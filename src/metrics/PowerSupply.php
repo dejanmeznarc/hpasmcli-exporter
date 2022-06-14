@@ -14,11 +14,11 @@ class PowerSupply implements MetricInterface
 
     public function printPrometheus()
     {
-        echo "hpe_psu_present{number=$this->number} " . (int)($this->present) . "<br>";
-        echo "hpe_psu_redundant{number=$this->number} " . (int)($this->redundant??-1) . "<br>";
-        echo "hpe_psu_condition{number=$this->number} " . ($this->condition??"unknown") . "<br>";
-        echo "hpe_psu_hotplug{number=$this->number} " . (int)($this->hotplug??-1) . "<br>";
-        echo "hpe_psu_power{number=$this->number} " . ($this->power ?? -1.0) . "<br>";
+        echo "hpe_psu_present{number=$this->number} " . (int)($this->present) . "\n";
+        echo "hpe_psu_redundant{number=$this->number} " . (int)($this->redundant??-1) . "\n";
+        echo "hpe_psu_condition{number=$this->number} " . ($this->condition??"unknown") . "\n";
+        echo "hpe_psu_hotplug{number=$this->number} " . (int)($this->hotplug??-1) . "\n";
+        echo "hpe_psu_power{number=$this->number} " . ($this->power ?? -1.0) . "\n";
     }
 
 

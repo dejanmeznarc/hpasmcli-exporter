@@ -53,8 +53,8 @@ class TempSensor implements MetricInterface
     public function printPrometheus()
     {
         if(isset($this->temp)){
-            echo "hpe_temp_celsius{number=$this->number,location=$this->location} $this->temp" . "<br>";
-            echo "hpe_temp_threshold_celsius{number=$this->number,location=$this->location} $this->threshold" . "<br>";
+            echo "hpe_temp_celsius{number=$this->number,location=$this->location} $this->temp" . "\n";
+            echo "hpe_temp_threshold_celsius{number=$this->number,location=$this->location} $this->threshold" . "\n";
         }
     }
 
