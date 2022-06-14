@@ -17,9 +17,9 @@ class PowerMeter
 
         $ret = [];
 
-        echo "pm: \n";
-        print_r($powerMeters);
-        echo "----: \n";
+//        echo "pm: \n";
+//        print_r($powerMeters);
+//        echo "----: \n";
 
         foreach ($powerMeters[1] as $key => $powerMeter) {
 
