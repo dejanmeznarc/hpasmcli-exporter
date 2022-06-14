@@ -19,6 +19,9 @@ if(isset($_GET["debug"])){
     print_r($praser);
 }
 
+
+include "promhelp.php";
+
 foreach ($praser->measurements as $measurement) {
     $measurement->printPrometheus();
 }
