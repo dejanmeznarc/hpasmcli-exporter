@@ -1,6 +1,7 @@
 <?php
 require_once "Fan.php";
 require_once "TempSensor.php";
+require_once "PowerMeter.php";
 
 $hpOutputFile = getcwd() . "/hp_output.example";
 
@@ -82,9 +83,10 @@ foreach ($byEntries as $entry) {
 $fans = Fan::parse(razmesariTableo($rawTables["fans"]));
 $temps = TempSensor::parse(razmesariTableo($rawTables["temps"]));
 
+$pm = PowerMeter::parse($nonTables["powermeter"]);
 
 
 //print_r($fans);
-print_r($temps);
-
+//print_r($temps);
+print_r($pm);
 
