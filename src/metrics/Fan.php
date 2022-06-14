@@ -44,9 +44,9 @@ class Fan implements MetricInterface
         echo "hpe_fan_present{number=\"$this->number\",location=\"$this->location\"} " . (int)($this->present) . "\n";
         echo "hpe_fan_redundant{number=\"$this->number\",location=\"$this->location\"} " . (int)($this->redundant) . "\n";
         echo "hpe_fan_hotplug{number=\"$this->number\",location=\"$this->location\"} " . (int)($this->hotplug) . "\n";
-        echo "hpe_fan_speed{number=\"$this->number\",location=\"$this->location\"} $this->speed" . "\n";
+        echo "hpe_fan_speed{number=\"$this->number\",location=\"$this->location\"} \"$this->speed\"" . "\n";
         echo "hpe_fan_speed_percent{number=\"$this->number\",location=\"$this->location\"} $this->speed_percent" . "\n";
-        echo "hpe_fan_partner{number=\"$this->number\",location=\"$this->location\"} $this->partner" . "\n";
+        echo "hpe_fan_partner{number=\"$this->number\",location=\"$this->location\"} " . (int)($this->partner??-1) . "\n";
     }
 
     public static function parse(array $tableArray): array

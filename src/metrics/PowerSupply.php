@@ -16,7 +16,7 @@ class PowerSupply implements MetricInterface
     {
         echo "hpe_psu_present{number=\"$this->number\"} " . (int)($this->present) . "\n";
         echo "hpe_psu_redundant{number=\"$this->number\"} " . (int)($this->redundant??-1) . "\n";
-        echo "hpe_psu_condition{number=\"$this->number\"} " . ($this->condition??"unknown") . "\n";
+        echo "hpe_psu_condition{number=\"$this->number\"} \"" . ($this->condition??"unknown") . "\"\n";
         echo "hpe_psu_hotplug{number=\"$this->number\"} " . (int)($this->hotplug??-1) . "\n";
         echo "hpe_psu_power{number=\"$this->number\"} " . ($this->power ?? -1.0) . "\n";
     }
