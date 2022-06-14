@@ -46,8 +46,6 @@ Sensor   Location              Temp       Threshold
 
 Power Meter #1
 	Power Reading  : 74
-Power Meter #2
-	Power Reading  : 73
 
 
 Power supply #1
@@ -58,4 +56,9 @@ Power supply #1
 	Power    : 50 Watts
 Power supply #2
 	Power Supply not present
-
+Power supply #3
+	Present  : Yes
+	Redundant: Yes
+	Condition: Ok
+	Hotplug  : Supported
+	Power    : 70 Watts
