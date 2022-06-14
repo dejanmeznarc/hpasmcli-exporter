@@ -1,0 +1,58 @@
+Last fetch: 2022-06-14 10:45:12
+
+Fan  Location        Present Speed  of max  Redundant  Partner  Hot-pluggable
+---  --------        ------- -----  ------  ---------  -------  -------------
+#1   VIRTUAL         Yes     NORMAL  13%     Yes        0        Yes
+#2   VIRTUAL         Yes     NORMAL  13%     Yes        0        Yes
+#3   VIRTUAL         Yes     NORMAL  13%     Yes        0        Yes
+#4   VIRTUAL         Yes     NORMAL  13%     Yes        0        Yes
+#5   VIRTUAL         Yes     NORMAL  13%     N/A        N/A      Yes
+#6   VIRTUAL         Yes     NORMAL  13%     N/A        N/A      Yes
+
+
+Sensor   Location              Temp       Threshold
+------   --------              ----       ---------
+#1        AMBIENT              24C/75F    41C/105F
+#2        PROCESSOR_ZONE       40C/104F   82C/179F
+#3        PROCESSOR_ZONE        -          -
+#4        MEMORY_BD            30C/86F    87C/188F
+#5        MEMORY_BD            29C/84F    87C/188F
+#6        MEMORY_BD             -          -
+#7        MEMORY_BD             -          -
+#8        SYSTEM_BD            41C/105F   90C/194F
+#9        SYSTEM_BD            34C/93F    65C/149F
+#10       SYSTEM_BD            40C/104F   90C/194F
+#11       SYSTEM_BD            34C/93F    70C/158F
+#12       SYSTEM_BD            45C/113F   90C/194F
+#13       I/O_ZONE              -          -
+#14       I/O_ZONE              -          -
+#15       I/O_ZONE              -          -
+#16       I/O_ZONE              -          -
+#17       I/O_ZONE              -          -
+#18       I/O_ZONE              -          -
+#19       SYSTEM_BD            27C/80F    70C/158F
+#20       SYSTEM_BD            30C/86F    70C/158F
+#21       SYSTEM_BD            31C/87F    80C/176F
+#22       SYSTEM_BD            30C/86F    80C/176F
+#23       SYSTEM_BD            37C/98F    77C/170F
+#24       SYSTEM_BD            35C/95F    70C/158F
+#25       SYSTEM_BD            31C/87F    70C/158F
+#26       SYSTEM_BD            31C/87F    70C/158F
+#27       I/O_ZONE              -          -
+#28       I/O_ZONE              -          -
+#29       SCSI_BACKPLANE_ZONE  35C/95F    60C/140F
+#30       SYSTEM_BD            60C/140F   110C/230F
+
+
+Power Meter #1
+	Power Reading  : 72
+
+Power supply #1
+	Present  : Yes
+	Redundant: No
+	Condition: Ok
+	Hotplug  : Supported
+	Power    : 50 Watts
+Power supply #2
+	Power Supply not present
+
