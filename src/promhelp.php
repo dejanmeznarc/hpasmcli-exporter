@@ -1,7 +1,7 @@
 # HELP hpe_temp_celsius Current temp in celsius 
 # TYPE hpe_temp_celsius gauge
 # HELP hpe_temp_threshold_celsius Threshold for warning
-# TYPE hpe_temp_celsius gauge
+# TYPE hpe_temp_threshold_celsius gauge
 # HELP hpe_fan_present Return 1 if fan is plugged in
 # TYPE hpe_fan_present gauge
 # HELP hpe_fan_redundant Return 1 if fan is redundan
